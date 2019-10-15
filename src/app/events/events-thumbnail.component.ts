@@ -10,18 +10,17 @@ import { template } from '@angular/core/src/render3';
         <div>Time: {{event.time}}</div>
         <div>Price: \${{event.price}}</div>
         <div>
-            <span>Location: {{event.location.address}}</span>
-            <span>&nbsp;</span>
+            <span class="pad-letf">Location: {{event.location.address}}</span>
+            
             <span>{{event.location.city}}, {{event.location.country}} </span>
         </div>
     </div>
-    `
+    `,
+    styles: [`
+    .pad-left { margin-left: 10px; }
+    .well div {color: #bbb;}
+    `]
 })
 export class EventsThumbnailComponent {
     @Input() event:any;
-    someValue: any = "Some value";
-
-    logFoo(){
-        console.log('foo')
-    }
 }
