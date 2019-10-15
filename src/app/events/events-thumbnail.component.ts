@@ -11,12 +11,12 @@ import { template } from '@angular/core/src/render3';
         <div>Price: \${{event.price}}</div>
         <div>
             <span class="pad-letf">Location: {{event.location.address}}</span>
-            
             <span>{{event.location.city}}, {{event.location.country}} </span>
         </div>
     </div>
     `,
     styles: [`
+    .thumbnail {min-height: 210px; }
     .pad-left { margin-left: 10px; }
     .well div {color: #bbb;}
     `]
